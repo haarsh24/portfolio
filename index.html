@@ -3,9 +3,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to the portfolio</title>
+    <style>
+        /* body{
+            color: red;
+        } */
+    </style>
+    <link  href="styles.css"  rel="stylesheet"/>
 </head>
 <body>
-    <h1>Welcome to my portfolio</h1>
+    <h1 style="color: red;">Welcome to my portfolio</h1>
     <p> Creating this website just for fun</p>
 
     <hr>
@@ -21,34 +27,36 @@
     <div>This is fluid container and it will go till the specified width</div>
      
     <h3>Centered Container</h3>
-    <div>This is the centered container and it will be at the center</div>
+    <div class="container container-center">This is the centered container and it will be at the center</div>
     
     <h2>@Links</h2>
-    <a href="/">Primary Link</a>
-    <a href="/" >Secondary Link</a> 
+    <a class="link primary-link" 
+       href="/">Primary Link</a>
+    <a class="link secondary-link"
+       href="/" >Secondary Link</a> 
     <hr>
     
     <h2>Lists</h2>
     <h3>Unordered Lists</h3>
-    <ul>
+    <ul class="list-non-bullet">
     <li>One</li>
     <li>Two</li>
     <li>Three</li>
     </ul>
     
-    <h3>Unordered Lists</h3>
-    <ul>
+    <h3>Reversed Unordered Lists</h3>
+    <ol  reversed>
     <li>Inline One</li>
     <li>Inline Two</li>
     <li>Inline Three</li>
-    </ul>
-
-    <h3>Reversed Ordered List</h3>
-    <ol>
-        <li>Egg</li>
-        <li>Bread</li>
-        <li>Butter</li>
     </ol>
+
+    <h3>Inline Ordered List</h3>
+    <ul>
+        <li class="list-inline"  >Egg</li>
+        <li class="list-inline"  >Bread</li>
+        <li class="list-inline"  >Butter</li>
+    </ul>
     <hr>
     <h2>@nav</h2>
     <nav>
@@ -87,7 +95,8 @@
         <p>This will have grey background</p>
 
     </section>
-    
+    <hr>
+    <h2>@Footer</h2>
     <footer>
         <div>Some small heading inside footer</div>
          <ul>
@@ -96,11 +105,6 @@
              <li>Social Three</li>
          </ul>
     </footer>
-
-
-
-
-
 
 
 </body>
